@@ -51,3 +51,9 @@ def negative(x, name=None):
 negative.unsupported_dtypes = {
     "torch": ("float16", "bfloat16", "uint8", "uint16", "uint32", "uint64")
 }
+
+def confusion_matrix(x, y, name=None):
+    return ivy.confusion_matrix(x, y)
+
+
+confusion_matrix.unsupported_dtypes = {"torch": ("float16", "bfloat16")}

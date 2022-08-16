@@ -57,4 +57,6 @@ def confusion_matrix(x, y, name=None):
     return ivy.confusion_matrix(x, y)
 
 
-confusion_matrix.unsupported_dtypes = {"torch": ("float16", "bfloat16")}
+confusion_matrix.unsupported_dtypes = {"torch": ("float16", "bfloat16"),
+                                       "tensorflow": ("float16", "bfloat16"),
+                                      }

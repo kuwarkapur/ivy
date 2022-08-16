@@ -49,7 +49,8 @@ def negative(x, name=None):
 
 
 negative.unsupported_dtypes = {
-    "torch": ("float16", "bfloat16", "uint8", "uint16", "uint32", "uint64")
+    "torch": ("float16", "bfloat16", "uint8", "uint16", "uint32", "uint64"),
+    "tensorflow": ("float16", "bfloat16", "uint8", "uint16", "uint32", "uint64"),
 }
 
 def confusion_matrix(x, y, name=None):
